@@ -15,6 +15,7 @@
 ;; `scripts/verify-cljs-runner-completeness.cljs` checks this file
 ;; against the tree.
 (require '[cljs.test :as t]
+         '[kotoba.si.constants-test]
          '[kotoba.si.crosstalk-test]
          '[kotoba.si.eye-diagram-test]
          '[kotoba.si.s-param-test]
@@ -23,7 +24,8 @@
 (defmethod t/report [:cljs.test/default :end-run-tests] [m]
   (when-not (t/successful? m) (set! (.-exitCode js/process) 1)))
 
-(t/run-tests 'kotoba.si.crosstalk-test
+(t/run-tests 'kotoba.si.constants-test
+              'kotoba.si.crosstalk-test
               'kotoba.si.eye-diagram-test
               'kotoba.si.s-param-test
               'kotoba.si.transmission-line-test)
