@@ -76,8 +76,8 @@ coupling coefficients, LCG parameters, etc.) live in
 ## Testing / linting
 
 ```bash
-clojure -M:test
-clojure -M:lint
+kbb -M:test
+kbb -M:lint
 ```
 
 ## What was ported
