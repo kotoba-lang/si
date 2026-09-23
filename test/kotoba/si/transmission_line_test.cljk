@@ -2,7 +2,7 @@
   "Parity tests for `kotoba.si.transmission-line`, ported from the
   `#[cfg(test)]` module in kami-si's `transmission_line.rs`
   (kotoba-lang/kami-engine, retired Rust crate, ADR-2607010000)."
-  (:require [clojure.test :refer [deftest is testing]]
+  (:require [kotoba.test :refer [deftest is testing]]
             [kotoba.si.transmission-line :as tl]))
 
 (deftest microstrip-z0-near-50-ohm
