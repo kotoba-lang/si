@@ -2,7 +2,7 @@
   "Parity tests for `kotoba.si.eye-diagram`, ported from the
   `#[cfg(test)]` module in kami-si's `eye_diagram.rs`
   (kotoba-lang/kami-engine, retired Rust crate, ADR-2607010000)."
-  (:require [clojure.test :refer [deftest is]]
+  (:require [kotoba.test :refer [deftest is]]
             [kotoba.si.eye-diagram :as eye]))
 
 (deftest eye-height-positive
