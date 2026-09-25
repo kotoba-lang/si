@@ -14,7 +14,7 @@
   53 bits and are omitted rather than rounded -- see the comment at the
   omission."
   #?@(:clj [(:require [clojure.edn :as edn]
-                       [clojure.java.io :as io])]))
+                       [kotoba.io :as io])]))
 
 (def constants
   "All kotoba.si constants, namespaced by domain (`:tline/*` `:crosstalk/*`
